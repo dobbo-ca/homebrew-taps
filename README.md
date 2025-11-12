@@ -1,11 +1,11 @@
 # Homebrew Taps
 
-Homebrew tap for cdobbyn tools.
+Homebrew tap for dobbo-ca tools.
 
 ## Installation
 
 ```bash
-brew tap cdobbyn/taps
+brew tap dobbo-ca/taps
 ```
 
 ## Available Formulae
