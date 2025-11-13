@@ -48,13 +48,13 @@ jobs:
           # Update version
           sed -i "s|version \".*\"|version \"${VERSION}\"|" "$FORMULA_FILE"
 
-          # Update URLs - pattern: formula-1.0.0-darwin-arm64.tar.gz
-          sed -i "s|${FORMULA}-[0-9.]*-darwin-arm64.tar.gz|${FORMULA}-${VERSION}-darwin-arm64.tar.gz|g" "$FORMULA_FILE"
-          sed -i "s|${FORMULA}-[0-9.]*-darwin-amd64.tar.gz|${FORMULA}-${VERSION}-darwin-amd64.tar.gz|g" "$FORMULA_FILE"
-          sed -i "s|${FORMULA}-[0-9.]*-linux-arm64.tar.gz|${FORMULA}-${VERSION}-linux-arm64.tar.gz|g" "$FORMULA_FILE"
-          sed -i "s|${FORMULA}-[0-9.]*-linux-amd64.tar.gz|${FORMULA}-${VERSION}-linux-amd64.tar.gz|g" "$FORMULA_FILE"
+          # Update URLs - pattern: formula-v1.0.0-darwin-arm64.tar.gz (with v prefix in filename)
+          sed -i "s|${FORMULA}-v\?[0-9.]*-darwin-arm64.tar.gz|${FORMULA}-${VERSION}-darwin-arm64.tar.gz|g" "$FORMULA_FILE"
+          sed -i "s|${FORMULA}-v\?[0-9.]*-darwin-amd64.tar.gz|${FORMULA}-${VERSION}-darwin-amd64.tar.gz|g" "$FORMULA_FILE"
+          sed -i "s|${FORMULA}-v\?[0-9.]*-linux-arm64.tar.gz|${FORMULA}-${VERSION}-linux-arm64.tar.gz|g" "$FORMULA_FILE"
+          sed -i "s|${FORMULA}-v\?[0-9.]*-linux-amd64.tar.gz|${FORMULA}-${VERSION}-linux-amd64.tar.gz|g" "$FORMULA_FILE"
 
-          # Update release version in URLs
+          # Update release version in URLs (download path)
           sed -i "s|/download/v\?[0-9.]*[0-9]/|/download/${VERSION}/|g" "$FORMULA_FILE"
 
           # Update SHA256s for each platform
