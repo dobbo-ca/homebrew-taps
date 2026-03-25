@@ -1,7 +1,7 @@
 class AzGo < Formula
   desc "Azure CLI alternative written in Go"
   homepage "https://github.com/dobbo-ca/azure-go-cli"
-  version "v0.33.0"
+  version "v0.34.1"
   license "MIT"
 
   # Conflict with official Azure CLI
@@ -9,23 +9,23 @@ class AzGo < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dobbo-ca/azure-go-cli/releases/download/v0.33.0/az-go-v0.33.0-darwin-arm64.tar.gz"
-      sha256 "a94dc3f7a5a8b12994756d8dc15396366edd6ffa694ba360ff2d5dc1d739f14e"
+      url "https://github.com/dobbo-ca/azure-go-cli/releases/download/v0.34.1/az-go-v0.34.1-darwin-arm64.tar.gz"
+      sha256 "3aeff6955b0798f7297131fb3e6114e1923a82555ffe2544e759d51f42ba9933"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dobbo-ca/azure-go-cli/releases/download/v0.33.0/az-go-v0.33.0-darwin-amd64.tar.gz"
-      sha256 "e83cb8d0c9269afe31f709c8c470f590fa87f602233eb1e8350de54da35798fc"
+      url "https://github.com/dobbo-ca/azure-go-cli/releases/download/v0.34.1/az-go-v0.34.1-darwin-amd64.tar.gz"
+      sha256 "6d5354384acc9d987deed8530d06410da82c554ca3699551feb4e0ba7602c4ce"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/dobbo-ca/azure-go-cli/releases/download/v0.33.0/az-go-v0.33.0-linux-arm64.tar.gz"
-      sha256 "6e9f0f098e785948474b232f119e28d7fcb784f25bef8e75e22b4a0a0592471e"
+      url "https://github.com/dobbo-ca/azure-go-cli/releases/download/v0.34.1/az-go-v0.34.1-linux-arm64.tar.gz"
+      sha256 "7ec3a4202234ba54fc8dcdc75c8ff11912eebb02396112653b198d48c2675137"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dobbo-ca/azure-go-cli/releases/download/v0.33.0/az-go-v0.33.0-linux-amd64.tar.gz"
-      sha256 "b3df26c67d8546a34c85405658793727ebee004bd7f15373b05851109ea27417"
+      url "https://github.com/dobbo-ca/azure-go-cli/releases/download/v0.34.1/az-go-v0.34.1-linux-amd64.tar.gz"
+      sha256 "ce13db445428004d73656b9186dc702ddfb50a3a1f17bc320e304d6ae0424ae1"
     end
   end
 
