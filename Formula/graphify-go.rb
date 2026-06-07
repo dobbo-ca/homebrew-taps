@@ -4,6 +4,9 @@ class GraphifyGo < Formula
   version "v0.0.0"
   license "MIT"
 
+  # Conflict with official graphify
+  conflicts_with "graphify", because: "both install 'graphify' binary"
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dobbo-ca/graphify-go/releases/download/v0.0.0/graphify-go-v0.0.0-darwin-arm64.tar.gz"
