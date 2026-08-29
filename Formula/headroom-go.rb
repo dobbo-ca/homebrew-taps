@@ -1,28 +1,28 @@
 class HeadroomGo < Formula
   desc "Compress LLM context before it reaches the model"
   homepage "https://github.com/dobbo-ca/headroom-go"
-  version "v0.1.1"
+  version "v0.1.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dobbo-ca/headroom-go/releases/download/v0.1.1/headroom-go-v0.1.1-darwin-arm64.tar.gz"
-      sha256 "070d0b05ff651c872035715421bfb786bf8e6c41b30d82734fcd6a231beada10"
+      url "https://github.com/dobbo-ca/headroom-go/releases/download/v0.1.2/headroom-go-v0.1.2-darwin-arm64.tar.gz"
+      sha256 "a5731745690db4e398fa86f2dd6bdca12fd3110d4dc5115f3829d907c43c968d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dobbo-ca/headroom-go/releases/download/v0.1.1/headroom-go-v0.1.1-darwin-amd64.tar.gz"
-      sha256 "0b7e58ee9c817c48d68dde1638e2de3c54151ac3c30703f29fca0460e8aad84e"
+      url "https://github.com/dobbo-ca/headroom-go/releases/download/v0.1.2/headroom-go-v0.1.2-darwin-amd64.tar.gz"
+      sha256 "dbdb066b3bdb52870e6bf257cb5050fe1afefc04b110d031f7115ddba1e6a6de"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/dobbo-ca/headroom-go/releases/download/v0.1.1/headroom-go-v0.1.1-linux-arm64.tar.gz"
-      sha256 "bc628ffd0115b41f1f6c0207f56ab0ed2d5eb579bcb2cc9b4b147a4474d21d6e"
+      url "https://github.com/dobbo-ca/headroom-go/releases/download/v0.1.2/headroom-go-v0.1.2-linux-arm64.tar.gz"
+      sha256 "4f8ba70fa3bfe8967d1f139bd3f5baa9010a2d60d30c657d73300410da6ad027"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dobbo-ca/headroom-go/releases/download/v0.1.1/headroom-go-v0.1.1-linux-amd64.tar.gz"
-      sha256 "595b0ec087d3a505a58b4a6fb413cc459905aa6032cf34d583e9fd3ebfbb0515"
+      url "https://github.com/dobbo-ca/headroom-go/releases/download/v0.1.2/headroom-go-v0.1.2-linux-amd64.tar.gz"
+      sha256 "6e85a8382744afd27b2365c50a724802ddb4dcf552f4943ff4c5b9558e7547fd"
     end
   end
 
