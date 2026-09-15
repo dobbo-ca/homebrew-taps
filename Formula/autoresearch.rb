@@ -5,8 +5,8 @@ class Autoresearch < Formula
   # supports darwin/arm64 today. The url must stay top-level: `brew tap` loads
   # every formula for every OS/arch and rejects one with no url on that platform.
   url "https://github.com/dobbo-ca/autoresearch/releases/download/v0.1.1/autoresearch-v0.1.1-darwin-arm64.tar.gz"
-  sha256 "b04cfbb8d51a77fda8dabecc366930f389672e48aa6b85d7ea014ae01f94324f"
   version "v0.1.1"
+  sha256 "b04cfbb8d51a77fda8dabecc366930f389672e48aa6b85d7ea014ae01f94324f"
 
   depends_on arch: :arm64
   depends_on :macos
