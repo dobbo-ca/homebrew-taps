@@ -1,28 +1,28 @@
 class GraphifyGo < Formula
   desc "Turn a codebase into a queryable knowledge graph (Go/JS/TS)"
   homepage "https://github.com/dobbo-ca/graphify-go"
-  version "v0.11.1"
+  version "v0.12.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dobbo-ca/graphify-go/releases/download/v0.11.1/graphify-go-v0.11.1-darwin-arm64.tar.gz"
-      sha256 "e72e4409895e16c2a29a6f0f93b27904804c88359ed42f1b3985e39b7fed5574"
+      url "https://github.com/dobbo-ca/graphify-go/releases/download/v0.12.0/graphify-go-v0.12.0-darwin-arm64.tar.gz"
+      sha256 "e1776bcad0443aed993e0412100eefd8c8ff79d57e9f0c35dcd3b7999424ec79"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dobbo-ca/graphify-go/releases/download/v0.11.1/graphify-go-v0.11.1-darwin-amd64.tar.gz"
-      sha256 "e1c310ab7d793c6750903c7062f5a6713b9e694531571b99922fff50b6e566dc"
+      url "https://github.com/dobbo-ca/graphify-go/releases/download/v0.12.0/graphify-go-v0.12.0-darwin-amd64.tar.gz"
+      sha256 "68b54dacad738d5a8fc91b9eb26acaa512287f55f7192e421ff0826f3eece08a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/dobbo-ca/graphify-go/releases/download/v0.11.1/graphify-go-v0.11.1-linux-arm64.tar.gz"
-      sha256 "1aa481370fcbe3d592a9c4dd1d71f9cb4892615e7cf587ab1700413e6c3830a8"
+      url "https://github.com/dobbo-ca/graphify-go/releases/download/v0.12.0/graphify-go-v0.12.0-linux-arm64.tar.gz"
+      sha256 "9194f2f2186a618f8dfaeddcbd1a27cc5e09ef38add70487233866b4e44368a4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dobbo-ca/graphify-go/releases/download/v0.11.1/graphify-go-v0.11.1-linux-amd64.tar.gz"
-      sha256 "e2c0e7a556d93adfd96a9ffadcbe3d5b6eef4645f2e613a3178bb01eaa1d0b0e"
+      url "https://github.com/dobbo-ca/graphify-go/releases/download/v0.12.0/graphify-go-v0.12.0-linux-amd64.tar.gz"
+      sha256 "e990ede498cbcf137f3415682172a040032b10bfc59b7df231aa7b145574740c"
     end
   end
 
